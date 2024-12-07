@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import AccessibilityAnalyzer from './components/AccessibilityAnalyzer.vue'
 </script>
 
 <template>
 
-  <HelloWorld msg="Vite + Vue" />
+  <AccessibilityAnalyzer />
 </template>
 
 <style scoped>
