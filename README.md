@@ -48,7 +48,7 @@ The HTML Analyzer is a powerful web application designed to help developers and 
 
 #### Backend Configuration
 
-Create a `.env` file in the `backend` directory:
+Create a `.env` file in the `BE` directory:
 
 ```
 PORT=3200
@@ -69,7 +69,7 @@ VITE_API_URL=http://localhost:3200
 1. Start Backend Server
 
    ```bash
-   cd backend
+   cd BE
    npm run dev
    ```
 
