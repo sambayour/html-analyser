@@ -27,11 +27,12 @@ const handleFileUpload = (e: Event) => {
     const input = e.target as HTMLInputElement
     if (input.files && input.files.length > 0) {
         emitFileUpload(input.files[0])
+        input.value = '';
     }
 }
 
 const triggerFileInput = () => {
-    fileInput.value?.click()
+    // fileInput.value?.click()
 }
 
 const emitFileUpload = (file: File) => {
