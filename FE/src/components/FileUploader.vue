@@ -3,8 +3,15 @@
         @click="triggerFileInput">
         <input type="file" ref="fileInput" @change="handleFileUpload" accept=".html" class="hidden" />
         <p class="text-gray-600">
-            {{ uploadText }}
+            {{ isLoading ? 'Processing...' : uploadText }}
         </p>
+        <div v-if="isLoading" class="mt-2">
+            <div class="inline-block h-6 w-6 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em]"
+                role="status">
+                <span
+                    class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -22,6 +29,7 @@ const emit = defineEmits<{
 }>()
 
 const fileInput = ref<HTMLInputElement | null>(null)
+const isLoading = ref(false)
 
 const handleFileUpload = (e: Event) => {
     const input = e.target as HTMLInputElement
