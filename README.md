@@ -207,7 +207,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Your Name - [samuelolubayo@gmail.com](mailto:samuelolubayo@gmail.com)
+Name - [samuelolubayo@gmail.com](mailto:samuelolubayo@gmail.com)
 
 Project Link: [https://github.com/sambayour/html-analyser](https://github.com/sambayour/html-analyser)
 
